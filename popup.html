@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Lesson and Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      #lesson {
+        margin-top: 20px;
+        font-size: 14px;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      #quiz {
+        margin-top: 20px;
+        display: none;
+      }
+
+      .question {
+        margin-bottom: 10px;
+      }
+
+      .result {
+        margin-top: 10px;
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+      }
+
+      #pastResults {
+        margin-top: 20px;
+        display: none;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lesson Generator</h1>
+    <button id="generateLessonButton">Generate 2-3 Min Lesson</button>
+
+    <div id="lesson"></div>
+
+    <button id="startQuizButton" style="display: none">Start Quiz</button>
+    <div id="quiz"></div>
+
+    <button id="reviewResultsButton" style="display: none">Review Quiz Results</button>
+    <div id="pastResults"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
+
+<!-- "default_icon": {
+  "16": "icon16.png",
+  "48": "icon48.png",
+  "128": "icon128.png"
+} -->
