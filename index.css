@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#lesson {
+  margin-top: 20px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#quiz {
+  margin-top: 20px;
+  display: none;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.result {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+#pastResults {
+  margin-top: 20px;
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}

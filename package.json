@@ -1,14 +1,16 @@
 {
-  "name": "chrome-extension",
+  "name": "claude-extension",
   "version": "1.0.0",
   "main": "background.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "openai": "^4.68.0"
+    "axios": "^1.7.7",
+    "groq-sdk": "^0.7.0"
   }
 }

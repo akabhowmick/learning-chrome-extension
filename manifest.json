@@ -1,20 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "LearnItBetter",
-  "version": "2.3",
-  "description": "This is a learning tool to assist you in studying better! Generates a lesson from the current page content and quizzes the user afterward.",
-  "action": {
-    "default_popup": "popup.html"
-  },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "name": "Learn it Better!",
+  "version": "1.1",
+  "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
+      "js": ["content_script.js"]
     }
   ],
-  "host_permissions": ["https://api.openai.com/*"]
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
